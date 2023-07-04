@@ -96,10 +96,10 @@ public class BinaryTree<E extends Comparable> {
         TreeNode<E> parent = null;
 
         while (current != null) {
-            int comparison = value.compareTo(current.getValue());
-            if (comparison == 0) {
+            int comp = value.compareTo(current.getValue());
+            if (comp == 0) {
                 break;
-            } else if (comparison < 0) {
+            } else if (comp < 0) {
                 parent = current;
                 current = current.getLeft();
             } else {
